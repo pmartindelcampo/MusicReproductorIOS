@@ -12,6 +12,13 @@
 		6E19953C21D5318C0021819E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E19953A21D5318C0021819E /* Main.storyboard */; };
 		6E19953E21D531930021819E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E19953D21D531930021819E /* Assets.xcassets */; };
 		6E19954121D531930021819E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E19953F21D531930021819E /* LaunchScreen.storyboard */; };
+		6E19954A21D5397C0021819E /* icons8-play-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E19954921D5397C0021819E /* icons8-play-filled-50.png */; };
+		6E19954C21D53A0A0021819E /* icons8-pause-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E19954B21D53A090021819E /* icons8-pause-filled-50.png */; };
+		6E19954F21D53A660021819E /* icons8-rewind-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E19954D21D53A660021819E /* icons8-rewind-filled-50.png */; };
+		6E19955021D53A660021819E /* icons8-fast-forward-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E19954E21D53A660021819E /* icons8-fast-forward-filled-50.png */; };
+		6EDD2C2621D67D4300A75189 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD2C2521D67D4300A75189 /* TableViewController.swift */; };
+		6EDD544321DA5FB4002AE041 /* ListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD544221DA5FB4002AE041 /* ListTableView.swift */; };
+		6EE4009A21DBB7AB00C767E7 /* AddTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4009921DBB7AB00C767E7 /* AddTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		6E19953D21D531930021819E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E19954021D531930021819E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E19954221D531930021819E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E19954921D5397C0021819E /* icons8-play-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-play-filled-50.png"; sourceTree = "<group>"; };
+		6E19954B21D53A090021819E /* icons8-pause-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-pause-filled-50.png"; sourceTree = "<group>"; };
+		6E19954D21D53A660021819E /* icons8-rewind-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-rewind-filled-50.png"; sourceTree = "<group>"; };
+		6E19954E21D53A660021819E /* icons8-fast-forward-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-fast-forward-filled-50.png"; sourceTree = "<group>"; };
+		6EDD2C2521D67D4300A75189 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		6EDD544221DA5FB4002AE041 /* ListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableView.swift; sourceTree = "<group>"; };
+		6EE4009921DBB7AB00C767E7 /* AddTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,29 @@
 		6E19953521D5318C0021819E /* Reproductor */ = {
 			isa = PBXGroup;
 			children = (
+				6E19954821D539620021819E /* Icons */,
 				6E19953621D5318C0021819E /* AppDelegate.swift */,
 				6E19953821D5318C0021819E /* ViewController.swift */,
 				6E19953A21D5318C0021819E /* Main.storyboard */,
 				6E19953D21D531930021819E /* Assets.xcassets */,
 				6E19953F21D531930021819E /* LaunchScreen.storyboard */,
 				6E19954221D531930021819E /* Info.plist */,
+				6EDD2C2521D67D4300A75189 /* TableViewController.swift */,
+				6EDD544221DA5FB4002AE041 /* ListTableView.swift */,
+				6EE4009921DBB7AB00C767E7 /* AddTableView.swift */,
 			);
 			path = Reproductor;
+			sourceTree = "<group>";
+		};
+		6E19954821D539620021819E /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				6E19954E21D53A660021819E /* icons8-fast-forward-filled-50.png */,
+				6E19954D21D53A660021819E /* icons8-rewind-filled-50.png */,
+				6E19954B21D53A090021819E /* icons8-pause-filled-50.png */,
+				6E19954921D5397C0021819E /* icons8-play-filled-50.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +152,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E19954121D531930021819E /* LaunchScreen.storyboard in Resources */,
+				6E19955021D53A660021819E /* icons8-fast-forward-filled-50.png in Resources */,
 				6E19953E21D531930021819E /* Assets.xcassets in Resources */,
+				6E19954A21D5397C0021819E /* icons8-play-filled-50.png in Resources */,
 				6E19953C21D5318C0021819E /* Main.storyboard in Resources */,
+				6E19954C21D53A0A0021819E /* icons8-pause-filled-50.png in Resources */,
+				6E19954F21D53A660021819E /* icons8-rewind-filled-50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E19953921D5318C0021819E /* ViewController.swift in Sources */,
+				6EDD544321DA5FB4002AE041 /* ListTableView.swift in Sources */,
+				6EE4009A21DBB7AB00C767E7 /* AddTableView.swift in Sources */,
+				6EDD2C2621D67D4300A75189 /* TableViewController.swift in Sources */,
 				6E19953721D5318C0021819E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +318,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Reproductor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.upm.Reproductor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +337,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Reproductor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.upm.Reproductor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
